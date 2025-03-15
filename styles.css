@@ -94,7 +94,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 10px; /* Adds space between buttons */
+  gap: 5px; /* Adds space between buttons */
 }
 
 nav ul li {
@@ -103,7 +103,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   display: block;
   color: white;
   border: 2px solid #720f0f; /* Blue border */
@@ -207,100 +207,6 @@ nav ul li a:hover {
   }
 }
 
-.message-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 15px;
-  font-size: 24px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.message-btn:hover {
-  background-color: #444;
-}
-
-.chat-card {
-  position: fixed;
-  bottom: 80px;
-  right: 30px;
-  width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: none;
-  flex-direction: column;
-}
-
-.chat-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.chat-header span {
-  font-weight: bold;
-}
-
-.close-btn {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.close-btn:hover {
-  color: red;
-}
-
-.chat-window {
-  height: 250px;
-  overflow-y: auto;
-  padding: 10px;
-}
-
-.message-list {
-  list-style: none;
-  padding: 0;
-}
-
-.message-input {
-  width: 80%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  outline: none;
-  font-size: 14px;
-}
-
-.send-btn {
-  width: 15%;
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.send-btn:hover {
-  background-color: #444;
-}
-
-.send-btn:focus {
-  outline: none;
-}
 /* Tooltip Container */
 .tooltip-container {
   position: relative;
@@ -316,7 +222,7 @@ nav ul li a:hover {
   justify-content: center;
   background: linear-gradient(135deg, #6e8efb, #a777e3);
   color: white;
-  padding: 7px 14px;
+  padding: 5px 10px; /* Reduced padding */
   border-radius: 50px;
   cursor: pointer;
   transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
@@ -373,9 +279,9 @@ nav ul li a:hover {
 }
 
 .text {
-  font-size: 18px;
+  font-size: 14px; /* Reduced font size */
   font-weight: 600;
-  margin-right: 12px;
+  margin-right: 8px; /* Reduced margin */
   white-space: nowrap;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   transition: letter-spacing 0.3s ease;
@@ -386,10 +292,13 @@ nav ul li a:hover {
 }
 
 .share-icon {
+  width: 18px; /* Reduced icon size */
+  height: 18px; /* Reduced icon size */
   fill: white;
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), fill 0.3s ease;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
+
 
 .button-content:hover .share-icon {
   transform: rotate(180deg) scale(1.1);
@@ -428,15 +337,15 @@ nav ul li a:hover {
 .social-icons {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8px; /* Reduced gap */
 }
 
 .social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 36px; /* Reduced size */
+  height: 36px; /* Reduced size */
   border-radius: 50%;
   background: #f0f0f0;
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
@@ -461,8 +370,8 @@ nav ul li a:hover {
 }
 
 .social-icon svg {
-  width: 24px;
-  height: 24px;
+  width: 18px; /* Reduced icon size */
+  height: 18px; /* Reduced icon size */
   fill: #333;
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), fill 0.3s ease;
   z-index: 1;
@@ -681,6 +590,36 @@ nav ul li a:hover {
     height: 16px;
   }
 }
+/* About Me and Privacy Policy Page Styles */
+.about-content, .privacy-policy-content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.about-content h2, .privacy-policy-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-content p, .privacy-policy-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.privacy-policy-content h3 {
+  font-size: 1rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #fff;
+}
 
 /* Footer Section */
 .footer {
@@ -695,9 +634,15 @@ nav ul li a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Space between reference links and copyright */
+  align-items: center; /* Vertically center content */
 }
 
+/* Copyright Notice */
 .copyright {
   font-size: 0.8rem;
   opacity: 0.8;
+  margin: 0; /* Remove default margin */
+  text-align: right; /* Align text to the right */
 }
