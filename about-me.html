@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Mr.Sadeera</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="header-content">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="me-logo.png" alt="Your Logo">
+      </div>
+
+      <!-- Your Name -->
+      <div class="name">
+        <h1>Mr.Sadeera</h1>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+
+      <!-- Call-to-Action Button -->
+      <a href="#cta" class="cta-button">Get Started</a>
+    </div>
+  </header>
+
+  <!-- About Me Content Section -->
+  <section class="about-content">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Mr.Sadeera, a passionate web developer and designer dedicated to creating stunning, user-friendly designs that captivate and inspire. With years of experience in the industry, I specialize in transforming ideas into reality.
+    </p>
+    <p>
+      My mission is to provide high-quality solutions tailored to your needs. Whether you're looking for a new website, a redesign, or just some advice, I'm here to help.
+    </p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="copyright">
+        &copy; <span id="current-year"></span> Mr.Sadeera. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
